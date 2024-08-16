@@ -3,7 +3,7 @@ name: Build
 on: [ push, pull_request ]
 
 jobs:
-
+  release-and-push:
     name: Release And Push
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
